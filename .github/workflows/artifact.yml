@@ -29,6 +29,8 @@ jobs:
       with:
         name: hello-artifact
         path: ./artifacts       # Places the file in the artifacts directory
+    - name: List files (Debug step)
+      run: ls -R ./artifacts
 
     - name: Display content
       run: cat ./artifacts/hello.txt
